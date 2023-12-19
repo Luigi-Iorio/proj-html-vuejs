@@ -1,7 +1,15 @@
 <script>
-export default {};
+import MainHeroOne from "./MainHeroOne.vue";
+
+export default {
+  components: {
+    MainHeroOne,
+  },
+};
 </script>
 
-<template></template>
+<template>
+  <MainHeroOne />
+</template>
 
 <style lang="scss" scoped></style>
