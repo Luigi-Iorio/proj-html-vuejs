@@ -14,7 +14,9 @@ export default {
   <div class="top">
     <div class="cont">
       <span>{{ topText }}</span>
-      <a href="#">i {{ topPhone }}</a>
+      <a href="#"
+        ><font-awesome-icon icon="fa-solid fa-phone-flip" /> {{ topPhone }}</a
+      >
     </div>
   </div>
   <!-- /top -->
