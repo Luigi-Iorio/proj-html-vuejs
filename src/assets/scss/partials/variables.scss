@@ -1,0 +1,11 @@
+// colors
+$tundora: #484848;
+$white: #ffffff;
+$gumbo: #7f9ea8;
+
+// mixin
+@mixin flex-row-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
