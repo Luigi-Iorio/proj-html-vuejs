@@ -21,3 +21,22 @@ $athens: #e5e8eb;
   border-radius: 30px;
   background-color: $bay;
 }
+
+@mixin buttonTwo {
+  background-color: transparent;
+  border: 3px solid $gumbo;
+  padding: 10px 20px;
+  border-radius: 15px;
+  color: $gumbo;
+  text-transform: uppercase;
+}
+
+@mixin card {
+  text-align: center;
+  padding: 45px 0;
+  background-color: $white;
+  border-top: 5px solid $bay;
+  border-radius: 10px;
+  color: $gumbo;
+  box-shadow: 0px 10px 15px 8px rgba(0, 0, 0, 0.1);
+}
