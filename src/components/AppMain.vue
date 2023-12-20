@@ -5,6 +5,7 @@ import MainHeroTwo from "./MainHeroTwo.vue";
 import MainHeroThree from "./MainHeroThree.vue";
 import MainHeroFour from "./MainHeroFour.vue";
 import MainHeroFive from "./MainHeroFive.vue";
+import MainHeroSix from "./MainHeroSix.vue";
 
 export default {
   components: {
@@ -14,6 +15,7 @@ export default {
     MainHeroThree,
     MainHeroFour,
     MainHeroFive,
+    MainHeroSix,
   },
 };
 </script>
@@ -25,6 +27,7 @@ export default {
   <MainHeroThree />
   <MainHeroFour />
   <MainHeroFive />
+  <MainHeroSix />
 </template>
 
 <style lang="scss" scoped></style>
