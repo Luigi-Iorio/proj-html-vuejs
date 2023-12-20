@@ -1,11 +1,5 @@
 <script>
-import BottonOne from "./BottonOne.vue";
-
-export default {
-  components: {
-    BottonOne,
-  },
-};
+export default {};
 </script>
 
 <template>
@@ -47,7 +41,9 @@ export default {
           placeholder="Location"
         />
       </div>
-      <BottonOne />
+      <!-- button -->
+      <button>Request a callback</button>
+      <!-- /button -->
     </form>
     <!-- /form -->
   </div>
@@ -87,6 +83,10 @@ export default {
       border-radius: 10px;
       background-color: $athens;
       outline: none;
+    }
+
+    button {
+      @include buttonOne;
     }
     .name {
       @include flex-row-center;

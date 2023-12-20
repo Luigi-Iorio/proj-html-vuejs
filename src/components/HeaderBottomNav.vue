@@ -1,7 +1,6 @@
 <script>
 import Logo from "./Logo.vue";
 import HeaderBottomMenu from "./HeaderBottomMenu.vue";
-import BottonOne from "./BottonOne.vue";
 
 export default {
   data() {
@@ -37,7 +36,6 @@ export default {
   components: {
     Logo,
     HeaderBottomMenu,
-    BottonOne,
   },
 };
 </script>
@@ -47,7 +45,9 @@ export default {
   <nav>
     <Logo />
     <HeaderBottomMenu :menuLinks="menuLinks" />
-    <BottonOne />
+    <!-- button -->
+    <button>Book Now</button>
+    <!-- /button -->
   </nav>
   <!-- /nav -->
 </template>
@@ -61,5 +61,9 @@ nav {
   margin: 0 auto;
   @include flex-row-center;
   justify-content: space-between;
+
+  button {
+    @include buttonOne;
+  }
 }
 </style>
