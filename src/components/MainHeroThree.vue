@@ -11,8 +11,12 @@ export default {
 </script>
 
 <template>
-  <HeroThreeTop />
-  <HeroThreeBottom />
+  <!-- hero three -->
+  <div class="hero three">
+    <HeroThreeTop />
+    <HeroThreeBottom />
+  </div>
+  <!-- /hero three -->
 </template>
 
 <style lang="scss" scoped></style>
