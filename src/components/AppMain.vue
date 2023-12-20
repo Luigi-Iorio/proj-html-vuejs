@@ -4,6 +4,7 @@ import MainBanner from "./MainBanner.vue";
 import MainHeroTwo from "./MainHeroTwo.vue";
 import MainHeroThree from "./MainHeroThree.vue";
 import MainHeroFour from "./MainHeroFour.vue";
+import MainHeroFive from "./MainHeroFive.vue";
 
 export default {
   components: {
@@ -12,6 +13,7 @@ export default {
     MainHeroTwo,
     MainHeroThree,
     MainHeroFour,
+    MainHeroFive,
   },
 };
 </script>
@@ -22,6 +24,7 @@ export default {
   <MainHeroTwo />
   <MainHeroThree />
   <MainHeroFour />
+  <MainHeroFive />
 </template>
 
 <style lang="scss" scoped></style>
