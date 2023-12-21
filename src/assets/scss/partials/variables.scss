@@ -4,6 +4,7 @@ $tundora-tras: #4848487a;
 $white: #ffffff;
 $gumbo: #7f9ea8;
 $bay: #79b27b;
+$bay-hover: #48644b;
 $athens: #e5e8eb;
 $black: #040b11;
 
@@ -21,6 +22,12 @@ $black: #040b11;
   text-transform: uppercase;
   border-radius: 30px;
   background-color: $bay;
+  cursor: pointer;
+  transition: 0.4s;
+
+  &:hover {
+    background-color: $bay-hover;
+  }
 }
 
 @mixin buttonTwo {
@@ -30,6 +37,13 @@ $black: #040b11;
   border-radius: 15px;
   color: $gumbo;
   text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.4s;
+
+  &:hover {
+    border: 3px solid $bay;
+    color: $bay;
+  }
 }
 
 @mixin card {
