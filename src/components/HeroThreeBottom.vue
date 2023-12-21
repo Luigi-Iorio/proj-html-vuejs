@@ -36,6 +36,7 @@ export default {
         <div class="card">
           <div class="img">
             <img :src="card.img" :alt="card.name" />
+            <div class="name">Instructor {{ card.name }}</div>
           </div>
           <h2>{{ card.name }}</h2>
           <div class="icon">
@@ -76,13 +77,33 @@ export default {
         @include card;
         padding-right: 40px;
         padding-left: 40px;
+        cursor: pointer;
+
+        &.card:hover {
+          .name {
+            opacity: 1;
+          }
+        }
 
         .img {
+          position: relative;
           margin-bottom: 30px;
 
           img {
             width: 100%;
             display: block;
+          }
+
+          .name {
+            opacity: 0;
+            font-size: 14px;
+            position: absolute;
+            bottom: 30px;
+            right: 0;
+            padding: 5px;
+            background-color: white;
+            border: 2px solid $gumbo;
+            transition: 0.4s;
           }
         }
 
