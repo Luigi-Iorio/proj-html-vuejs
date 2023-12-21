@@ -7,8 +7,12 @@ export default {
 <template>
   <!-- menu -->
   <ul v-for="col in cols" class="col">
+    <h4>{{ col.title }}</h4>
     <li v-for="element in col.elements">
-      <h4>{{ element }}</h4>
+      <h3>
+        <font-awesome-icon :icon="['fas', element.icon]" />
+      </h3>
+      <a href="#">{{ element.text }}</a>
     </li>
   </ul>
   <!-- menu -->
@@ -22,25 +26,28 @@ export default {
 
   li {
     margin-bottom: 10px;
+    display: flex;
+    gap: 15px;
   }
 
-  li:first-child {
-    h4 {
-      font-size: 22px;
-      margin-bottom: 30px;
-      text-transform: uppercase;
-    }
+  h4 {
+    font-size: 22px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+
+  a {
+    display: inline-block;
   }
 }
 
 ul:last-child {
-  li:first-child {
-    h4 {
-      color: $athens;
-    }
+  h4 {
+    color: $athens;
   }
 
-  h4 {
+  a,
+  h3 {
     color: $bay;
   }
 }

@@ -1,5 +1,11 @@
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      icons: ["facebook-f", "twitter", "youtube", "instagram"],
+    };
+  },
+};
 </script>
 
 <template>
@@ -11,10 +17,18 @@ export default {};
         <a href="#">ThemeFusion</a> | All Rights Reserved | Power by
         <a href="#">Wordpress</a>
       </p>
-      <div class="icon">i i i i</div>
+      <div class="icon">
+        <ul>
+          <li v-for="icon in icons">
+            <a href="#"><font-awesome-icon :icon="['fab', icon]" /></a>
+          </li>
+        </ul>
+      </div>
     </div>
     <div class="arrow">
-      <div class="icon">i</div>
+      <div class="icon">
+        <font-awesome-icon :icon="['fas', 'chevron-up']" />
+      </div>
     </div>
   </div>
   <!-- bottom -->
@@ -37,6 +51,7 @@ export default {};
     width: 50px;
     padding: 10px;
     background-color: $tundora;
+    cursor: pointer;
   }
 
   .cont {
@@ -47,6 +62,17 @@ export default {};
 
     a {
       color: $bay;
+    }
+
+    .icon {
+      ul {
+        @include flex-row-center;
+        gap: 20px;
+
+        a {
+          color: $athens;
+        }
+      }
     }
   }
 }

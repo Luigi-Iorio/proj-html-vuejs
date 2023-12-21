@@ -10,21 +10,45 @@ export default {
       img: "src/assets/img/footer-ad-grid-400x357.png",
       cols: [
         {
+          title: "Contact Details",
           elements: [
-            "Contact Details",
-            "12345 North Main Street, New York, NY 5555555",
-            "1.800.555.6789",
-            "info@your-domain.com",
-            "them-fusion.com",
+            {
+              icon: "house",
+              text: "12345 North Main Street, New York, NY 5555555",
+            },
+            {
+              icon: "phone-flip",
+              text: "1.800.555.6789",
+            },
+            {
+              icon: "envelope",
+              text: "info@your-domain.com",
+            },
+            {
+              icon: "link",
+              text: "them-fusion.com",
+            },
           ],
         },
         {
+          title: "Courses",
           elements: [
-            "Courses",
-            "Pass Plus",
-            "Intensive Course",
-            "Automatic",
-            "Instructor Training",
+            {
+              icon: "circle-right",
+              text: "Pass Plus",
+            },
+            {
+              icon: "circle-right",
+              text: "Intensive Course",
+            },
+            {
+              icon: "circle-right",
+              text: "Automatic",
+            },
+            {
+              icon: "circle-right",
+              text: "Instructor Training",
+            },
           ],
         },
       ],

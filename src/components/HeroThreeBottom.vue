@@ -6,16 +6,19 @@ export default {
         {
           img: "src/assets/img/instructor-mikehart-200x127.jpg",
           name: "Mike Hart",
+          icons: ["facebook-f", "twitter", "instagram"],
           text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         },
         {
           img: "src/assets/img/instructor-johnsmith-200x127.jpg",
           name: "John Smith",
+          icons: ["facebook-f", "twitter", "instagram"],
           text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         },
         {
           img: "src/assets/img/instructor-angelahart-200x127.jpg",
           name: "Angela Hart",
+          icons: ["facebook-f", "twitter", "instagram"],
           text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         },
       ],
@@ -37,9 +40,8 @@ export default {
           <h2>{{ card.name }}</h2>
           <div class="icon">
             <ul>
-              <!-- //TODO importare fontawesome -->
-              <li v-for="n in 3">
-                <a href="#">i</a>
+              <li v-for="icon in card.icons">
+                <a href="#"><font-awesome-icon :icon="['fab', icon]" /></a>
               </li>
             </ul>
           </div>
@@ -74,7 +76,6 @@ export default {
         @include card;
         padding-right: 40px;
         padding-left: 40px;
-        height: 450px;
 
         .img {
           margin-bottom: 30px;
@@ -90,9 +91,11 @@ export default {
         }
 
         .icon {
+          margin: 20px 0;
           ul {
             display: flex;
             justify-content: center;
+            gap: 20px;
 
             li {
               width: auto;
@@ -104,7 +107,7 @@ export default {
     // seconodo elemento li
     li:nth-child(2) {
       .card {
-        height: 470px;
+        padding-bottom: 70px;
       }
     }
   }
