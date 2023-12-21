@@ -21,13 +21,17 @@ export default {
 </script>
 
 <template>
-  <MainHeroOne />
-  <MainBanner />
-  <MainHeroTwo />
-  <MainHeroThree />
-  <MainHeroFour />
-  <MainHeroFive />
-  <MainHeroSix />
+  <!-- main -->
+  <main>
+    <MainHeroOne />
+    <MainBanner />
+    <MainHeroTwo />
+    <MainHeroThree />
+    <MainHeroFour />
+    <MainHeroFive />
+    <MainHeroSix />
+  </main>
+  <!-- /main -->
 </template>
 
 <style lang="scss" scoped></style>
